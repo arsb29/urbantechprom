@@ -1,29 +1,29 @@
-import './FocusSection.css';
+import styles from './FocusSection.module.css';
 
 export default function FocusSection() {
   return (
-    <section className="focus">
-      <header className="focus-header">
-        <div className="focus-logo">
-          <span className="focus-logo-icon">◎</span>
-          <span className="focus-logo-text">УРБАНТЕХПРОМ</span>
+    <section className={styles.focus}>
+      <header className={styles.focusHeader}>
+        <div className={styles.focusLogo}>
+          <span className={styles.focusLogoIcon}>◎</span>
+          <span className={styles.focusLogoText}>УРБАНТЕХПРОМ</span>
         </div>
-        <button className="focus-btn-contact">Связаться нами</button>
+        <button className={styles.focusBtnContact}>Связаться нами</button>
       </header>
 
-      <h2 className="focus-title">Фокус компании</h2>
+      <h2 className={styles.focusTitle}>Фокус компании</h2>
 
-      <div className="focus-list">
-        <div className="focus-item">
-          <div className="focus-checkbox"></div>
+      <div className={styles.focusList}>
+        <div className={styles.focusItem}>
+          <div className={styles.focusCheckbox}></div>
           <p>Повышение инвестиционной эффективности инфраструктурных<br/>вычислительных центров</p>
         </div>
-        <div className="focus-item">
-          <div className="focus-checkbox"></div>
+        <div className={styles.focusItem}>
+          <div className={styles.focusCheckbox}></div>
           <p>Формирование технологической и финансовой базы для развития<br/>цифровой экономики</p>
         </div>
-        <div className="focus-item">
-          <div className="focus-checkbox"></div>
+        <div className={styles.focusItem}>
+          <div className={styles.focusCheckbox}></div>
           <p>Сокращение сроков вывода мощностей на рынок</p>
         </div>
       </div>
