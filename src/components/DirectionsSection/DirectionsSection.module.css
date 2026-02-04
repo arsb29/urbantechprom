@@ -1,116 +1,28 @@
-/* Directions Section Styles */
-.directions {
-    background-color: #1a1a1a;
-    color: #fff;
-    padding-bottom: 60px;
+.container {
+    padding: 40px;
+    height: 100vh;
 }
 
-.directions-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-}
-
-.directions-logo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.directions-logo-icon {
-    font-size: 20px;
-    color: #fff;
-}
-
-.directions-logo-text {
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    color: #fff;
-}
-
-.directions-btn-contact {
-    padding: 12px 24px;
-    background-color: transparent;
-    border: 1px solid #fff;
-    color: #fff;
-    font-size: 14px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.directions-btn-contact:hover {
-    background-color: #fff;
-    color: #000;
-}
-
-.directions-title {
-    font-size: 28px;
-    font-style: italic;
-    font-weight: 400;
-    padding: 0 40px 30px;
-}
-
-.directions-grid {
+.directionsGrid {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    grid-template-rows: auto auto;
-    gap: 15px;
-    padding: 0 40px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    column-gap: 32px;
+    row-gap: 18px;
 }
 
-.directions-card {
+.card {
     position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    height: 200px;
+    & > img {
+        width: 100%;
+    }
 }
 
-.directions-card-large {
-    grid-row: span 1;
-}
-
-.directions-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: grayscale(100%);
-    transition: filter 0.3s ease;
-}
-
-.directions-card:hover img {
-    filter: grayscale(50%);
-}
-
-.directions-card-overlay {
+.text {
+    color: #D2D2D2;
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 15px;
-    background: linear-gradient(transparent, rgba(0,0,0,0.8));
-}
-
-.directions-card-overlay span {
-    font-size: 13px;
-    color: #fff;
-    line-height: 1.4;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .directions-header {
-        padding: 15px 20px;
-    }
-
-    .directions-grid {
-        grid-template-columns: 1fr;
-        padding: 0 20px;
-    }
-
-    .directions-title {
-        padding: 0 20px 20px;
-        font-size: 24px;
-    }
+    left: 24px;
+    bottom: 24px;
+    font-size: 24px;
+    max-width: 500px;
 }

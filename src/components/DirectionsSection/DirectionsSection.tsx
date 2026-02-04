@@ -1,41 +1,38 @@
+import Image from 'next/image';
 import styles from './DirectionsSection.module.css';
+import geo from "@/assets/geo.png";
+import gas from "@/assets/gas.png";
+import data from "@/assets/data.png";
+import energy from "@/assets/energy.png";
 
 export function DirectionsSection() {
   return (
-    <section className={styles.directions}>
-      <header className={styles.directionsHeader}>
-        <div className={styles.directionsLogo}>
-          <span className={styles.directionsLogoIcon}>◎</span>
-          <span className={styles.directionsLogoText}>УРБАНТЕХПРОМ</span>
-        </div>
-        <button className={styles.directionsBtnContact}>Связаться нами</button>
-      </header>
-
+    <section className={styles.container}>
       <h2 className={styles.directionsTitle}>Основные направления</h2>
 
       <div className={styles.directionsGrid}>
-        <div className={styles.directionsCard}>
-          <img src="https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=600" alt="Газовые энергоцентры"/>
-          <div className={styles.directionsCardOverlay}>
-            <span>Создание газовых энергоцентров</span>
+        <div className={styles.card}>
+          <Image src={gas} alt="" />
+          <div className={styles.text}>
+            Создание газовых энергоцентров
           </div>
         </div>
-        <div className={`${styles.directionsCard} ${styles.directionsCardLarge}`}>
-          <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800" alt="Центры обработки данных"/>
-          <div className={styles.directionsCardOverlay}>
-            <span>Создание центров обработки данных и<br/>объектов майнинговой инфраструктуры</span>
+        <div className={styles.card}>
+          <Image src={data} alt="" />
+          <div className={styles.text}>
+            Создание центров обработки данных и объектов майнинговой инфраструктуры
           </div>
         </div>
-        <div className={styles.directionsCard}>
-          <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600" alt="Энергетическое оборудование"/>
-          <div className={styles.directionsCardOverlay}>
-            <span>Поставка энергетического и вычислительного<br/>оборудывания</span>
+        <div className={styles.card}>
+          <Image src={energy} alt="" />
+          <div className={styles.text}>
+            Поставка энергетического и вычислительнонго оборудывания
           </div>
         </div>
-        <div className={styles.directionsCard}>
-          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600" alt="Энергетический девелопмент"/>
-          <div className={styles.directionsCardOverlay}>
-            <span>Энергетический девелопмент</span>
+        <div className={styles.card}>
+          <Image src={geo} alt="" />
+          <div className={styles.text}>
+            Энергетический девелопмент
           </div>
         </div>
       </div>
