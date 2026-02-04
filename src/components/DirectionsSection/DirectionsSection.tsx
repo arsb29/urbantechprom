@@ -1,6 +1,6 @@
 import styles from './DirectionsSection.module.css';
 
-export default function DirectionsSection() {
+export function DirectionsSection() {
   return (
     <section className={styles.directions}>
       <header className={styles.directionsHeader}>

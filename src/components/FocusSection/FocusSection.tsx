@@ -1,6 +1,6 @@
 import styles from './FocusSection.module.css';
 
-export default function FocusSection() {
+export function FocusSection() {
   return (
     <section className={styles.focus}>
       <header className={styles.focusHeader}>

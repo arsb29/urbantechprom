@@ -1,6 +1,6 @@
 import styles from './HeroSection.module.css';
 
-export default function HeroSection() {
+export function HeroSection() {
   return (
     <section className={styles.hero}>
       <header className={styles.heroHeader}>
@@ -13,7 +13,7 @@ export default function HeroSection() {
 
       <div className={styles.heroContent}>
         <div className={styles.heroText}>
-          <h1>Корпаративный центр<br/>компетенций <span className={styles.heroHighlight}>ГК &quot;Урбантех&quot;</span></h1>
+          <h1>Корпоративный центр<br/>компетенций <span className={styles.heroHighlight}>ГК &quot;Урбантех&quot;</span></h1>
           <p>Инженерные, инвестиционные и управленческие<br/>
           ресурсы для реализации проектов в сфере<br/>
           создания вычислительных комплексов<br/>
