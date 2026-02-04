@@ -22,11 +22,11 @@ export function Footer() {
       </div>
 
       <div className={styles.footerNotice}>
-        <button className={styles.footerBtnDevelopment}>Сайт находится в разработке</button>
+        Сайт находится в разработке
       </div>
 
       <div className={styles.footerBrand}>
-        <span>УРБАНТЕХПРОМ</span>
+        УРБАНТЕХПРОМ
       </div>
     </footer>
   );
