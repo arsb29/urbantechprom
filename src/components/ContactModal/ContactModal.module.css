@@ -1,0 +1,21 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  color: white;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.text {
+  text-align: center;
+}
+
+.button {
+    background: #272F32;
+    padding: 12px 20px;
+}
