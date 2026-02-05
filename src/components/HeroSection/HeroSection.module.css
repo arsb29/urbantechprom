@@ -1,6 +1,6 @@
 .container {
     background-color: black;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: flex-start;
     color: white;
@@ -18,7 +18,11 @@
     flex: 1;
     justify-content: center;
     margin-left: 150px;
+    @media (max-width: 768px) {
+        margin-left: 0;
+    }
 }
+
 
 .title {
     font-size: 48px;

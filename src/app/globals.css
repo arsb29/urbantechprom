@@ -2,6 +2,8 @@
 
 :root {
     --header-height: 123px;
+    --mobile: 480px;
+    --tablet: 768px;
 }
 
 * {

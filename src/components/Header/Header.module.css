@@ -25,4 +25,8 @@
     background: #31393C;
     min-width: 285px;
     padding: 12px;
+
+    @media (max-width: 768px) {
+        min-width: auto;
+    }
 }

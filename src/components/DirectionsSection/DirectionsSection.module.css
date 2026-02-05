@@ -18,6 +18,10 @@
     gap: 20px;
     column-gap: 32px;
     row-gap: 18px;
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .card {
