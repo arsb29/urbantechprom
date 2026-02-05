@@ -3,12 +3,15 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    padding: 0 0 0 150px;
     color: white;
+    padding: var(--header-height) 0 0 150px;
 }
 
 .info {
     max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .title {
@@ -17,6 +20,12 @@
 
 .highlight {
     color: #50BCD2;
+}
+
+.hr {
+    height: 1px;
+    width: 800px;
+    background-color: #414141;
 }
 
 .description {

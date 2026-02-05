@@ -1,10 +1,10 @@
 .container {
-    padding: 40px;
     min-height: 100vh;
     background-color: #31393C;
     display: flex;
     flex-direction: column;
     gap: 57px;
+    padding: var(--header-height) 40px 40px;
 }
 
 .directionsTitle {

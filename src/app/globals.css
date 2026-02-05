@@ -1,5 +1,9 @@
 @import "reset.css";
 
+:root {
+    --header-height: 123px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +11,8 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Raleway', sans-serif;
     background-color: #fff;
     color: #000;
-    line-height: 1.6;
 }
+

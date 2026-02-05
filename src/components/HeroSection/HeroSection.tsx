@@ -5,6 +5,7 @@ export function HeroSection() {
     <div className={styles.container}>
       <div className={styles.info}>
         <h1 className={styles.title}>Корпоративный центр компетенций <span className={styles.highlight}>ГК &quot;Урбантех&quot;</span></h1>
+        <div className={styles.hr}></div>
         <p className={styles.description}>Инженерные, инвестиционные и управленческие
         ресурсы для реализации проектов в сфере
         создания вычислительных комплексов
