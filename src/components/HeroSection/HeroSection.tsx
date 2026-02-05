@@ -12,6 +12,17 @@ export function HeroSection() {
         и объектов газовой генерации
         </p>
       </div>
+      <Line />
     </div>
   );
+}
+
+
+function Line() {
+  return (
+    <div className={styles.lines}>
+      <div className={styles.line}></div>
+      <div className={styles.line2}></div>
+    </div>
+  )
 }

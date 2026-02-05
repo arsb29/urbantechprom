@@ -2,9 +2,12 @@
     background-color: black;
     height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     color: white;
-    padding: var(--header-height) 0 0 150px;
+    padding: var(--header-height) 30px 30px;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .info {
@@ -12,6 +15,9 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+    flex: 1;
+    justify-content: center;
+    margin-left: 150px;
 }
 
 .title {
@@ -30,4 +36,24 @@
 
 .description {
     font-size: 32px;
+}
+
+.lines {
+    width: 100%;
+    position: relative;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: #5F5F5F;
+}
+
+.line2 {
+    position: absolute;
+    height: 1px;
+    width: 40px;
+    background-color: white;
+    top: 0;
+    right: 0;
 }
