@@ -4,6 +4,7 @@ import geo from "@/assets/geo.png";
 import gas from "@/assets/gas.png";
 import data from "@/assets/data.png";
 import energy from "@/assets/energy.png";
+import {WithCorners} from "@/components/WithCorners/WithCorners";
 
 export function DirectionsSection() {
   return (
@@ -11,30 +12,38 @@ export function DirectionsSection() {
       <h2 className={styles.directionsTitle}>Основные направления</h2>
 
       <div className={styles.directionsGrid}>
-        <div className={styles.card}>
-          <Image src={gas} alt="" />
-          <div className={styles.text}>
-            Создание газовых энергоцентров
+        <WithCorners>
+          <div className={styles.card}>
+            <Image src={gas} alt="" />
+            <div className={styles.text}>
+              Создание газовых энергоцентров
+            </div>
           </div>
-        </div>
-        <div className={styles.card}>
-          <Image src={data} alt="" />
-          <div className={styles.text}>
-            Создание центров обработки данных и объектов майнинговой инфраструктуры
+        </WithCorners>
+        <WithCorners>
+          <div className={styles.card}>
+            <Image src={data} alt="" />
+            <div className={styles.text}>
+              Создание центров обработки данных и объектов майнинговой инфраструктуры
+            </div>
           </div>
-        </div>
-        <div className={styles.card}>
-          <Image src={energy} alt="" />
-          <div className={styles.text}>
-            Поставка энергетического и вычислительнонго оборудывания
+        </WithCorners>
+        <WithCorners>
+          <div className={styles.card}>
+            <Image src={energy} alt="" />
+            <div className={styles.text}>
+              Поставка энергетического и вычислительнонго оборудывания
+            </div>
           </div>
-        </div>
-        <div className={styles.card}>
-          <Image src={geo} alt="" />
-          <div className={styles.text}>
-            Энергетический девелопмент
+        </WithCorners>
+        <WithCorners>
+          <div className={styles.card}>
+            <Image src={geo} alt="" />
+            <div className={styles.text}>
+              Энергетический девелопмент
+            </div>
           </div>
-        </div>
+        </WithCorners>
       </div>
     </section>
   );

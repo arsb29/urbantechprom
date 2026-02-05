@@ -1,5 +1,6 @@
 import styles from './Header.module.css';
 import Logo from '@/assets/logo.svg';
+import {WithCorners} from "@/components/WithCorners/WithCorners";
 
 export function Header() {
   return (
@@ -8,7 +9,7 @@ export function Header() {
         <Logo />
         <span className={styles.title}>УРБАНТЕХПРОМ</span>
       </div>
-      <button className={styles.button}>Связаться нами</button>
+      <WithCorners><button className={styles.button}>Связаться нами</button></WithCorners>
     </header>
   );
 }

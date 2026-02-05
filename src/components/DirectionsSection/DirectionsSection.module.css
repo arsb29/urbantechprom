@@ -1,6 +1,15 @@
 .container {
     padding: 40px;
-    height: 100vh;
+    min-height: 100vh;
+    background-color: #31393C;
+    display: flex;
+    flex-direction: column;
+    gap: 57px;
+}
+
+.directionsTitle {
+    font-size: 48px;
+    color: white;
 }
 
 .directionsGrid {

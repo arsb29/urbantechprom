@@ -1,0 +1,33 @@
+.container {
+    position: relative;
+    color: white;
+}
+
+.leftUp {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.leftDown {
+    position: absolute;
+    bottom: 0;
+    transform: rotate(270deg) translate(-4px, 3px);
+    z-index: 1;
+}
+
+.rightUp {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(90deg) translate(-3px, 3px);
+    z-index: 1;
+}
+
+.rightDown {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: rotate(180deg);
+    z-index: 1;
+}

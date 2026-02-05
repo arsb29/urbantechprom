@@ -17,7 +17,10 @@ export function FocusSection() {
         </div>
         <div className={styles.hr} />
         <div className={styles.row}>
-          <Logo />
+          <div className={styles.logo}>
+
+            <Logo className={styles.logo} />
+          </div>
           <div className={styles.description}>Сокращение сроков вывода мощностей на рынок</div>
         </div>
       </div>
