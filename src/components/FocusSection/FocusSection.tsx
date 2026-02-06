@@ -1,6 +1,8 @@
 import styles from './FocusSection.module.css';
 import Logo from '@/assets/corner.svg';
+import vectors from '@/assets/vectors.png';
 import {Icon} from "@/components/Icon/Icon";
+import Image from "next/image";
 
 export function FocusSection() {
   return (
@@ -22,6 +24,7 @@ export function FocusSection() {
           <div className={styles.description}>Сокращение сроков вывода мощностей на рынок</div>
         </div>
       </div>
+      <Image src={vectors} alt="" className={styles.image} />
     </div>
   );
 }
