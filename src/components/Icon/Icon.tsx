@@ -6,11 +6,12 @@ type Props = {
   size?: number;
   height?: number;
   width?: number;
+  color?: string;
 }
 
 export function Icon(props: Props) {
-  const {component: Component, width = 34, height = 34, size} = props;
+  const {component: Component, width = 34, height = 34, size, color = "#ffffff"} = props;
   return (
-    <div className={styles.logo} style={{width: `${size || width}px`, height: `${size || height}px`}}><Component /></div>
+    <div className={styles.logo} style={{width: `${size || width}px`, height: `${size || height}px`, color}}><Component /></div>
   )
 }

@@ -1,13 +1,21 @@
 .container {
     background-color: black;
     min-height: 100vh;
-    display: flex;
-    align-items: flex-start;
     color: white;
     padding: var(--header-height) 30px 30px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    flex: 1;
 }
 
 .info {
@@ -66,4 +74,15 @@
     background-color: white;
     top: 0;
     right: 0;
+}
+
+.logoOnBackground {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(60%, -50%);
+    @media (max-width: 768px) {
+        top: 0;
+        transform: translate(30%, -30%);
+    }
 }
