@@ -6,11 +6,14 @@ import Logo from '@/assets/logoBlack.svg';
 import text from "@/assets/text.png";
 import Image from "next/image";
 import {Icon} from "@/components/Icon/Icon";
+import {useBackgroundParallax} from "@/hooks";
 
 export function Footer() {
+  const { ref: contentRef } = useBackgroundParallax<HTMLDivElement>(0.1);
+
   return (
     <footer className={styles.footer}>
-      <div className={styles.footerContent}>
+      <div ref={contentRef} className={styles.footerContent}>
         <div className={styles.footerInfo}>
           <div className={styles.footerLogo}>
             <Icon component={Logo} size={24} />

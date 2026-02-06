@@ -8,14 +8,14 @@ import Image from "next/image";
 import {useBackgroundParallax} from "@/hooks";
 
 export function FocusSection() {
-  const { ref: titleRef, style: titleStyle } = useBackgroundParallax<HTMLHeadingElement>();
-  const { ref: listRef, style: listStyle } = useBackgroundParallax<HTMLDivElement>();
-  const { ref: imageRef, style: imageStyle } = useBackgroundParallax<HTMLDivElement>();
+  const { ref: titleRef } = useBackgroundParallax<HTMLHeadingElement>(0.1);
+  const { ref: listRef } = useBackgroundParallax<HTMLDivElement>(0.1);
+  const { ref: imageRef } = useBackgroundParallax<HTMLDivElement>(0.1);
 
   return (
     <div className={styles.container} data-theme="light">
-      <h2 ref={titleRef} style={titleStyle} className={styles.title}>Фокус компании</h2>
-      <div ref={listRef} style={listStyle} className={styles.list}>
+      <h2 ref={titleRef} className={styles.title}>Фокус компании</h2>
+      <div ref={listRef} className={styles.list}>
         <div className={styles.row}>
           <Icon component={Logo} size={18} color="black" />
           <div className={styles.description}>Повышение инвестиционной эффективности инфраструктурных вычислительных центров</div>
@@ -31,7 +31,7 @@ export function FocusSection() {
           <div className={styles.description}>Сокращение сроков вывода мощностей на рынок</div>
         </div>
       </div>
-      <div ref={imageRef} style={imageStyle} className={styles.imageWrapper}>
+      <div ref={imageRef} className={styles.imageWrapper}>
         <Image src={vectors} alt="" className={styles.image} />
       </div>
     </div>

@@ -4,7 +4,7 @@
     gap: 50px;
     min-height: 100vh;
     padding: var(--header-height) 40px 40px;
-    z-index: 2;
+    z-index: 20;
     position: relative;
 }
 

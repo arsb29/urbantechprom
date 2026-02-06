@@ -10,14 +10,14 @@ import {WithCorners} from "@/components/WithCorners/WithCorners";
 import {useBackgroundParallax} from "@/hooks";
 
 export function DirectionsSection() {
-  const { ref: titleRef, style: titleStyle } = useBackgroundParallax<HTMLHeadingElement>();
-  const { ref: gridRef, style: gridStyle } = useBackgroundParallax<HTMLDivElement>();
+  const { ref: titleRef } = useBackgroundParallax<HTMLHeadingElement>(0.1);
+  const { ref: gridRef } = useBackgroundParallax<HTMLDivElement>(0.1);
 
   return (
     <section className={styles.container} data-theme="dark">
-      <h2 ref={titleRef} style={titleStyle} className={styles.directionsTitle}>Основные направления</h2>
+      <h2 ref={titleRef} className={styles.directionsTitle}>Основные направления</h2>
 
-      <div ref={gridRef} style={gridStyle} className={styles.directionsGrid}>
+      <div ref={gridRef} className={styles.directionsGrid}>
         <WithCorners>
           <div className={styles.card}>
             <Image src={gas} alt="" />
