@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import {ReactNode} from "react";
 import './globals.css'
 import {ThemeProvider} from "@/contexts/ThemeContext";
+import {SmoothScrollProvider} from "@/components/SmoothScrollProvider";
 
 export const metadata: Metadata = {
   title: 'УРБАНТЕХПРОМ - Корпоративный центр компетенций',
@@ -22,9 +23,11 @@ export default function RootLayout({
       <title>УРБАНТЕХПРОМ</title>
     </head>
     <body>
-      <ThemeProvider>
-        {children}
-      </ThemeProvider>
+      <SmoothScrollProvider>
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
+      </SmoothScrollProvider>
     </body>
     </html>
   )
