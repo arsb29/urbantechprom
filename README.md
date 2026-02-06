@@ -25,22 +25,13 @@ npm start
 
 ## Выложить на GitHub Pages
 
-**Способ 1: Автоматический деплой (GitHub Actions)**
+**Автоматический деплой (GitHub Actions)**
 
 1. Загрузите код на GitHub
-2. Перейдите в Settings → Pages
-3. Выберите источник: Deploy from a branch
-4. Ветка: `gh-pages`, папка: `/ (root)`
-5. При каждом `push` в `main` ветку сайт будет автоматически обновляться
+2. Перейдите в **Settings → Pages**
+3. В разделе "Build and deployment":
+   - Source: **GitHub Actions**
+4. При каждом `push` в `main` ветку сайт будет автоматически обновляться
 
 Сайт будет доступен по адресу: `https://username.github.io/urbantechprom`
 
-**Способ 2: Ручной деплой**
-
-```bash
-npm run deploy
-```
-
-**Требования:**
-- Репозиторий на GitHub
-- Установленный Git
