@@ -5,11 +5,17 @@
     flex-direction: column;
     gap: 57px;
     padding: var(--header-height) 40px 40px;
+    @media (max-width: 768px) {
+        gap: 18px;
+    }
 }
 
 .directionsTitle {
     font-size: 48px;
     color: white;
+    @media (max-width: 768px) {
+        font-size: 24px;
+    }
 }
 
 .directionsGrid {
@@ -37,5 +43,10 @@
     left: 24px;
     bottom: 24px;
     font-size: 24px;
-    max-width: 500px;
+    max-width: 100%;
+    @media (max-width: 768px) {
+        font-size: 14px;
+        left: 16px;
+        bottom: 16px;
+    }
 }

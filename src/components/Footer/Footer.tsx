@@ -3,6 +3,7 @@ import {WithCorners} from "@/components/WithCorners/WithCorners";
 import Logo from '@/assets/logoBlack.svg';
 import text from "@/assets/text.png";
 import Image from "next/image";
+import {Icon} from "@/components/Icon/Icon";
 
 export function Footer() {
   return (
@@ -10,7 +11,7 @@ export function Footer() {
       <div className={styles.footerContent}>
         <div className={styles.footerInfo}>
           <div className={styles.footerLogo}>
-            <Logo />
+            <Icon component={Logo} size={24} />
             <span className={styles.footerLogoText}>УРБАНТЕХПРОМ</span>
           </div>
             <p>ООО &quot;УРБАНТЕХПРОМ&quot;</p>

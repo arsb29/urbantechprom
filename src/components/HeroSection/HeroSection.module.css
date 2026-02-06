@@ -26,6 +26,9 @@
 
 .title {
     font-size: 48px;
+    @media (max-width: 768px) {
+        font-size: 32px;
+    }
 }
 
 .highlight {
@@ -40,6 +43,9 @@
 
 .description {
     font-size: 32px;
+    @media (max-width: 768px) {
+        font-size: 18px;
+    }
 }
 
 .lines {

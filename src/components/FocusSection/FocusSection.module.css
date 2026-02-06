@@ -8,6 +8,9 @@
 
 .title {
     font-size: 48px;
+    @media (max-width: 768px) {
+        font-size: 24px;
+    }
 }
 
 .list {
@@ -25,12 +28,14 @@
 .row {
     display: flex;
     gap: 37px;
+    & > :first-child {
+        flex-shrink: 0;
+    }
 }
 
 .description {
     font-size: 32px;
-}
-
-.logo {
-    color: #50BCD2;
+    @media (max-width: 768px) {
+        font-size: 18px;
+    }
 }
