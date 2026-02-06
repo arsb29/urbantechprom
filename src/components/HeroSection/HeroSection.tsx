@@ -8,7 +8,7 @@ import {useIsMobile} from "@/hooks";
 export function HeroSection() {
   const isMobile = useIsMobile();
   return (
-    <div className={styles.container}>
+    <div className={styles.container} data-theme="dark">
       <div className={styles.logoOnBackground}><Icon component={Logo} size={isMobile ? 254 : 372} color="#1F262C" /></div>
       <div className={styles.content}>
         <div className={styles.info}>

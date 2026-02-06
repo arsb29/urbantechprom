@@ -8,7 +8,7 @@ import {WithCorners} from "@/components/WithCorners/WithCorners";
 
 export function DirectionsSection() {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} data-theme="dark">
       <h2 className={styles.directionsTitle}>Основные направления</h2>
 
       <div className={styles.directionsGrid}>

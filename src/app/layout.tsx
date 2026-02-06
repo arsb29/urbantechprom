@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import {ReactNode} from "react";
 import './globals.css'
+import {ThemeProvider} from "@/contexts/ThemeContext";
 
 export const metadata: Metadata = {
   title: 'УРБАНТЕХПРОМ - Корпоративный центр компетенций',
@@ -20,7 +21,11 @@ export default function RootLayout({
       <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
       <title>УРБАНТЕХПРОМ</title>
     </head>
-    <body>{children}</body>
+    <body>
+      <ThemeProvider>
+        {children}
+      </ThemeProvider>
+    </body>
     </html>
   )
 }

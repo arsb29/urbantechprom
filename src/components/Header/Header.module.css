@@ -36,3 +36,23 @@
         min-width: auto;
     }
 }
+
+/* Темная тема (черный/темно-серый фон) */
+.dark {
+    color: white;
+}
+
+.dark .button {
+    background: #31393C;
+    color: white;
+}
+
+/* Светлая тема (белый фон) */
+.light {
+    color: #000;
+}
+
+.light .button {
+    background: #ECECEC;
+    color: #000;
+}

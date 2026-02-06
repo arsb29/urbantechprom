@@ -4,7 +4,7 @@ import {Icon} from "@/components/Icon/Icon";
 
 export function FocusSection() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} data-theme="light">
       <h2 className={styles.title}>Фокус компании</h2>
       <div className={styles.list}>
         <div className={styles.row}>
