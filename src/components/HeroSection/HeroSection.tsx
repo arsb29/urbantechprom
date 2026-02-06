@@ -9,6 +9,7 @@ export function HeroSection() {
   const isMobile = useIsMobile();
   const { ref: logoRef, style: logoStyle } = useBackgroundParallax<HTMLDivElement>();
   const { ref: titleRef, style: titleStyle } = useBackgroundParallax<HTMLDivElement>();
+  const { ref: lineRef, style: lineStyle } = useBackgroundParallax<HTMLDivElement>();
   const { ref: descRef, style: descStyle } = useBackgroundParallax<HTMLParagraphElement>();
 
   return (
@@ -23,7 +24,7 @@ export function HeroSection() {
       <div className={styles.content}>
         <div className={styles.info}>
           <h1 ref={titleRef} style={titleStyle} className={styles.title}>Корпоративный центр компетенций <span className={styles.highlight}>ГК &quot;Урбантех&quot;</span></h1>
-          <div className={styles.hr}></div>
+          <div className={styles.hr} ref={lineRef} style={lineStyle}></div>
           <p ref={descRef} style={descStyle} className={styles.description}>Инженерные, инвестиционные и управленческие
           ресурсы для реализации проектов в сфере
           создания вычислительных комплексов
