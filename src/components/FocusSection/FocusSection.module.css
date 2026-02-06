@@ -4,6 +4,8 @@
     gap: 50px;
     min-height: 100vh;
     padding: var(--header-height) 40px 40px;
+    z-index: 2;
+    position: relative;
 }
 
 .title {
@@ -41,5 +43,11 @@
 }
 
 .image {
+    width: 100%;
+    height: auto;
+}
+
+.imageWrapper {
     align-self: center;
+    will-change: transform;
 }

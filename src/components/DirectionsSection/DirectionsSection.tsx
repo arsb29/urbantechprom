@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import styles from './DirectionsSection.module.css';
 import geo from "@/assets/geo.png";
@@ -5,13 +7,17 @@ import gas from "@/assets/gas.png";
 import data from "@/assets/data.png";
 import energy from "@/assets/energy.png";
 import {WithCorners} from "@/components/WithCorners/WithCorners";
+import {useBackgroundParallax} from "@/hooks";
 
 export function DirectionsSection() {
+  const { ref: titleRef, style: titleStyle } = useBackgroundParallax<HTMLHeadingElement>();
+  const { ref: gridRef, style: gridStyle } = useBackgroundParallax<HTMLDivElement>();
+
   return (
     <section className={styles.container} data-theme="dark">
-      <h2 className={styles.directionsTitle}>Основные направления</h2>
+      <h2 ref={titleRef} style={titleStyle} className={styles.directionsTitle}>Основные направления</h2>
 
-      <div className={styles.directionsGrid}>
+      <div ref={gridRef} style={gridStyle} className={styles.directionsGrid}>
         <WithCorners>
           <div className={styles.card}>
             <Image src={gas} alt="" />

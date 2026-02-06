@@ -1,3 +1,5 @@
+'use client';
+
 import styles from './Footer.module.css';
 import {WithCorners} from "@/components/WithCorners/WithCorners";
 import Logo from '@/assets/logoBlack.svg';
